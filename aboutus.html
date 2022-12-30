@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tsheetiz Baga portfolio website</title>
+	 	<meta charset="UTF-8">
+  		<meta name="description" content="Portfolio website">
+ 	 	<meta name="keywords" content="HTML,CSS,JavaScript">
+ 	 	<meta name="author" content="Tsheetiz Baga">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<!--------------The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+		The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-------------------------->
+		<link rel="stylesheet" type="text/css" href="css/end.css">
+		<link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+
+<body>
+	<header>
+
+		<div class="main1">
+			<div class="logo"><a href="aboutus.html"><img src="Images/Untitled-1.png"></a></div>
+			<ul>
+				<li><a href="Homepage.html">Home</a></li>
+				<li class="active"><a href="aboutus.html">About us</a></li>
+				<li><a href="blogs.html">Blogs</a></li>
+				<li><a href="research.html">Research</a></li>
+				
+				<li><a href="contact.html#">Contact</a></li>
+				
+			</ul>
+		</div>
+
+		<center>
+		<div class="Message">
+			<p><h1> Know me Better</h1>
+			<br>
+
+			</p>
+		</div>
+		</center>
+		</header>
+		<!----------------------------------------------------------------------------------------------------------------->
+<div class="Aqua">
+	<div>
+		<h1></h1>
+		<style type="text/css">
+			.images{
+				height: 500px;
+				width: 500px;
+				margin: 0 auto;
+				
+			}
+		</style>
+	</div>
+	</center>
+	
+	<div>
+		<img src="Images/p1.png" class="images">
+		<img src="python.png" class="images">
+		<img src="cpp.png" class="images">
+	</div>
+	<center>
+		<button onclick="change(-1)">&lt;</button>
+		<button onclick="change(1)">&gt;</button>
+	</center>
+	
+	<script type="text/javascript">
+
+		index = 0;
+
+		show(index);
+
+		function show(n){
+			var imgs = document.getElementsByClassName('images');
+
+			if (n> imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function automatic(){
+			index++;
+			show(index);
+			setTimeout(automatic, 1000);
+		}
+
+		automatic();
+
+		function change(n){
+			index+= n;
+			show(index);
+		}
+
+		
+	</script>
+</div>
+<!-------------------------------------------------------------------------------------------------------------------------------->
+	
+
+<div class="waterbottle">
+	<img src="Images/tbcv.png" height="600"padding: 20px;>
+			
+</div>
+<div class="Information">
+	<p><h1>
+		
+	</h1>
+		
+	</p>
+	
+</div>
+
+
+
+
+
+
+<footer class="Copyright">
+
+	©2019-2020 Copyrights Baga Tsheetiz. ®All Rights reserved.
+
+	
+</footer>
+</body>
+</html>
